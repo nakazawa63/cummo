@@ -28,39 +28,75 @@
     <header></header>
 
     <nav class="sidebar">
-        <div class="logo" href="#">
-            <img src="images/logo-light.svg" alt="Cummo">
+        <a class="logo" href="#">
+            <picture>
+                <!-- ダークモード用 -->
+                <source srcset="images/logo-dark.svg" media="(prefers-color-scheme: dark)" />
+                <!-- ライトモード用 -->
+                <source srcset="images/logo-light.svg" />
+                <img src="images/logo-light.svg" alt="" />
+            </picture>
             <p class="logotype">Cummo</p>
-        </div>
+        </a>
         <ul class="icon__list">
             <li>
                 <a href="#">
-                    <img src="images/icon_dashboard-light.svg" alt="dashboard">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_dashboard-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_dashboard-light.svg" />
+                        <img src="images/icon_dashboard-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Dashboard</p>
                 </a>
             </li>
             <li class="posts">
                 <a href="#">
-                    <img src="images/icon_posts-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_posts-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_posts-light.svg" />
+                        <img src="images/icon_posts-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Posts</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_media-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_media-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_media-light.svg" />
+                        <img src="images/icon_media-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Media</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_pages-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_pages-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_pages-light.svg" />
+                        <img src="images/icon_pages-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Pages</p>
                 </a>
             </li>
             <li class="comments">
                 <a href="#">
                     <div class="comments__wrap">
-                        <img src="images/icon_comments-light.svg" alt="">
+                        <picture>
+                            <!-- ダークモード用 -->
+                            <source srcset="images/icon_comments-dark.svg" media="(prefers-color-scheme: dark)" />
+                            <!-- ライトモード用 -->
+                            <source srcset="images/icon_comments-light.svg" />
+                            <img src="images/icon_comments-light.svg" alt="" />
+                        </picture>
                         <p class="icon__name">Comments</p>
                     </div>
                 </a>
@@ -70,31 +106,61 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_appearance-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_appearance-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_appearance-light.svg" />
+                        <img src="images/icon_appearance-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Appearance</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_plugins-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_plugins-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_plugins-light.svg" />
+                        <img src="images/icon_plugins-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Plugins</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_users-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_users-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_users-light.svg" />
+                        <img src="images/icon_users-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Users</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_settings-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_settings-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_settings-light.svg" />
+                        <img src="images/icon_settings-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Settings</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon_tools-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_tools-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_tools-light.svg" />
+                        <img src="images/icon_tools-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Tools</p>
                 </a>
             </li>
@@ -102,7 +168,13 @@
         <ul class="setting__list">
             <li class="mode__settings">
                 <div class="mode__settings--wrap">
-                    <img src="images/icon_darkmode-light.svg" alt="">
+                    <picture>
+                        <!-- ダークモード用 -->
+                        <source srcset="images/icon_lightmode-dark.svg" media="(prefers-color-scheme: dark)" />
+                        <!-- ライトモード用 -->
+                        <source srcset="images/icon_darkmode-light.svg" />
+                        <img src="images/icon_darkmode-light.svg" alt="" />
+                    </picture>
                     <p class="icon__name">Dark Mode</p>
                 </div>
                 <label class="toggle-button">
