@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: "inter", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* サイドバー */
+
+.sidebar{
+    width: 340px;
+    height: auto;
+    padding: 33.48px 25.11px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+    margin-bottom: 50.22px;
+}
+
+.logo img{
+    width: 38.98px;
+    height: 38.91px;
+}
+
+.logotype{
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
+    font-size: 24.06px;
+    color: #5D7285;
+}
+
+.icon__list{
+    display: flex;
+    flex-direction: column;
+    gap: 33.48px;
+    margin-bottom: 191.24px;
+}
+
+.icon__list a{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+    padding: 11.16px 19.53px;
+}
+
+.icon__list img{
+    width: 33.48px;
+}
+
+.icon__name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16.74px;
+    color: #5D7285;
+}
+
+.posts{
+    background-color: #E9F5FE;
+}
+
+.posts .icon__name{
+    color: #0C7FDA;
+    font-weight: 600;
+    font-size: 16.74px;
+}
+
+.comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments__wrap{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+}
+
+.unread{
+    width: 25.11px;
+    height: 25.11px;
+    background-color: #E9F5FE;
+    border-radius: 4.18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting__list{
+    display: flex;
+    flex-direction: column;
+    gap: 33.48px;
+}
+
+.settings__wrap{
+    display: flex;
+}
+
+.mode__settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8.37px 8.37px 8.37px 16.74px;
+}
+
+.mode__settings--wrap{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+}
+
+.setting__list img{
+    width: 33.48px;
+}
+
+.toggle-button {
+    display: inline-block;
+    position: relative;
+    width: 62.85px;
+    height: 25.18px;
+    border-radius: 104.62px;
+    background-color: #E9F5FE;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #ddd;
+}
+
+.toggle-button::before {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    font-size: 13.6px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;;
+    content: "ON";
+}
+
+
+.toggle-button::after {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 16.74px;
+    height: 16.74px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    background-color: #2196F3;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+    background-color: #fff;
+}
+
+.toggle-button:has(:checked)::before {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    font-size: 13.6px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;;
+    content: "OFF";
+}
+
+.toggle-button:has(:checked)::after {
+    left: 40px;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+    padding: 11.16px 19.53px;
+    background-color: #667A8A;
+}
+
+.logout__a{
+    display: flex;
+    align-items: center;
+    gap: 16.74px;
+}
+
+.logout .icon__name{
+    color: #fff;
+}
+
+/* ダークモード */
+
+@media (prefers-color-scheme: dark){
+
+.sidebar{
+    width: 340px;
+    height: auto;
+    padding: 33.48px 25.11px;
+    background-color: #031C30;
+}
+
+.posts{
+    background-color: #667A8A;
+}
+
+.posts .icon__name{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16.74px;
+}
+
+.logotype{
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
+    font-size: 24.06px;
+    color: #fff;
+}
+
+.icon__name{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16.74px;
+}
+
+.unread{
+    width: 25.11px;
+    height: 25.11px;
+    background-color: #fff;
+    border-radius: 4.18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue{
+    color: #0C7FDA;
+}
+
+.toggle-button {
+    display: inline-block;
+    position: relative;
+    width: 62.85px;
+    height: 25.18px;
+    border-radius: 104.62px;
+    background-color: #667A8A;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #ddd;
+}
+
+.toggle-button::before {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    font-size: 14.02px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;;
+    content: "ON";
+    color: #EFF2F4;
+}
+
+.toggle-button::after {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 16.74px;
+    height: 16.74px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    background-color: #EFF2F4;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+    background-color: #fff;
+}
+
+.toggle-button:has(:checked)::before {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    font-size: 13.6px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;;
+    content: "OFF";
+    color: #000;
+}
+
+.toggle-button:has(:checked)::after {
+    left: 40px;
+}
+
+.toggle-button input {
+    display: none;
+}
+}
+
+@media screen and (max-width: 768px) {
